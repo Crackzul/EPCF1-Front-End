@@ -1,0 +1,23 @@
+@use "../abstract/variables";
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: -4%;
+    .logo-top {
+        width: 8%;
+        img {width: 100%;}
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 10rem;
+        width: 70%;
+        li:after {
+            content: "";
+            height: 2px;
+            color: variables.$couleur-secondaire;
+        }
+    }
+}
