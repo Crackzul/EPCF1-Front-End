@@ -11,6 +11,8 @@
 @use "layout/header";
 @use "layout/hero";
 @use "layout/a-propos.scss";
+@use "layout/competences";
+@use "layout/projets";
 
 // 5. Importer les composants réutilisables
 @use "components/cta";

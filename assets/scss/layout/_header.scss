@@ -1,48 +1,48 @@
-@use "../abstract/variables";
-
+@use "../abstract/variables" as*;
 
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
-  background-color: variables.$couleur-fond;
+  background-color: $couleur-fond;
 
   .logo {
-    font-family: variables.$police-titres;
+    font-family:$police-titres;
     font-size: 32px;
-    color: variables.$couleur-principale;
+    color: $couleur-principale;
   }
 
   nav ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
     gap: 2rem;
     margin: 0;
     padding: 0;
 
     li a {
       text-decoration: none;
-      font-family: variables.$police-principale;
+      font-family: $police-principale;
       font-size: 18px;
       font-weight: 600;
-      color: variables.$couleur-texte;
+      color: $couleur-texte;
       transition: color 0.3s ease;
-      padding: 0.75rem 0.5rem; // pour aérer un peu sans faire vrai bouton
+      padding: 0.75rem 0.5rem;
 
       &:hover {
-        color: variables.$couleur-principale;
+        color: $couleur-principale;
       }
     }
   }
 
-  // Responsive simple
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
 
     nav ul {
       flex-direction: column;
+      align-items: flex-start;
       gap: 1rem;
     }
   }

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/layout/a-propos.scss","../../scss/abstract/_variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA,kBCFM;EDGN,OCFW;;ADIX;EACE;EACA;EACA;EACA;;AAEA;EANF;IAOI;IACA;IACA;IACA;;;AAIJ;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE","file":"a-propos.css"}
+{"version":3,"sourceRoot":"","sources":["../../scss/layout/a-propos.scss","../../scss/abstract/_variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA,kBCFM;EDGN,OCFW;;ADIX;EACE;EACA;EACA;;AAEA;EALF;IAMI;IACA;IACA;;;AAKJ;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE","file":"a-propos.css"}

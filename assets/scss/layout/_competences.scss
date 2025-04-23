@@ -1,0 +1,77 @@
+// 1. On importe nos variables (couleurs, polices, etc.)
+@use "../abstract/variables" as *;
+
+// 2. Début de la section compétences
+.competences {
+  padding: 4rem 2rem; // Marges internes généreuses
+  background-color: $couleur-fond; // Fond beige doux
+  color: $couleur-texte; // Texte foncé
+  text-align: center; // Alignement global au centre
+
+  // 3. Conteneur principal avec flexbox
+  .competences-container {
+    display: flex;
+    flex-direction: row; // Version desktop par défaut
+    justify-content: center;
+    align-items: flex-start;
+    gap: 34rem; // Gros écartement entre front-end et back-end
+
+    // 4. Adaptation mobile
+    @media screen and (max-width: 768px) {
+      flex-direction: column; // Les blocs passent en colonne
+      align-items: center; // Centrage horizontal
+      gap: 3rem;
+    }
+  }
+
+  // 5. Bloc contenant un titre + une liste de compétences
+  .competences-bloc {
+    flex: 1; // Laisse le bloc prendre l’espace dispo
+    max-width: 400px; // Limite la largeur
+
+    ul.liste-competences {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap; // retour à la ligne !
+      justify-content: center;
+      gap: 3rem;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100px; // Taille fixe pour régularité
+
+        img {
+          width: 60px;
+          height: 60px;
+          transition: transform 0.3s cubic-bezier(1, 0.56, 1, 1), filter 0.3s ease;
+
+          &:hover {
+            transform: scale(1.1); // Zoom doux
+            filter: brightness(1.1) saturate(1.1); // Boost visuel
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+
+        small {
+          font-style: italic;
+        }
+      }
+    }
+    // Bloc vide en légère transparence
+    &.vide {
+      opacity: 0.5;
+      font-style: italic;
+
+      p {
+        margin-top: 10rem; // Décalage pour équilibrer visuellement
+      }
+    }
+  }
+}

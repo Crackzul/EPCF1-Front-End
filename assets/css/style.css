@@ -28,15 +28,14 @@ body {
   background-color: #faf2e7;
   color: #244357;
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   line-height: 1.6;
 }
 
 small {
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .main-header {
@@ -54,6 +53,7 @@ small {
 .main-header nav ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   margin: 0;
   padding: 0;
@@ -77,6 +77,7 @@ small {
   }
   .main-header nav ul {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
   }
 }
@@ -122,16 +123,14 @@ small {
 }
 .a-propos .a-propos-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   gap: 15rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .a-propos .a-propos-container {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 15rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
   }
 }
 .a-propos .a-propos-photo img {
@@ -143,6 +142,127 @@ small {
 }
 .a-propos .a-propos-texte {
   max-width: 40rem;
+}
+
+.competences {
+  padding: 4rem 2rem;
+  background-color: #faf2e7;
+  color: #244357;
+  text-align: center;
+}
+.competences .competences-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 34rem;
+}
+@media screen and (max-width: 768px) {
+  .competences .competences-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+.competences .competences-bloc {
+  flex: 1;
+  max-width: 400px;
+}
+.competences .competences-bloc ul.liste-competences {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.competences .competences-bloc ul.liste-competences li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100px;
+}
+.competences .competences-bloc ul.liste-competences li img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s cubic-bezier(1, 0.56, 1, 1), filter 0.3s ease;
+}
+.competences .competences-bloc ul.liste-competences li img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1) saturate(1.1);
+}
+.competences .competences-bloc ul.liste-competences li p {
+  margin: 0;
+}
+.competences .competences-bloc ul.liste-competences li small {
+  font-style: italic;
+}
+.competences .competences-bloc.vide {
+  opacity: 0.5;
+  font-style: italic;
+}
+.competences .competences-bloc.vide p {
+  margin-top: 10rem;
+}
+
+.projets {
+  padding: 6rem 2rem;
+  background-color: #faf2e7;
+  color: #244357;
+  text-align: center;
+}
+.projets h2 {
+  font-family: "Marcellus", serif;
+  font-size: 32px;
+  margin-bottom: 4rem;
+  color: #167544;
+}
+.projets .projets-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.projets .projets-container .projet {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+.projets .projets-container .projet:hover {
+  transform: translateY(-8px);
+}
+.projets .projets-container .projet img {
+  width: 100%;
+}
+.projets .projets-container .projet h3 {
+  font-family: "Marcellus", serif;
+  font-size: 24px;
+  margin: 1.5rem 1.5rem 0.5rem;
+  color: #167544;
+}
+.projets .projets-container .projet p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  margin: 0 1.5rem 1.5rem;
+  line-height: 1.5;
+}
+.projets .projets-container .projet a.bouton-secondaire {
+  margin: 0 1.5rem 2rem;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .projets .projets-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projets .projet {
+    max-width: 100%;
+  }
 }
 
 .bouton {

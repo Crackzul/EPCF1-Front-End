@@ -23,15 +23,14 @@ body {
   background-color: variables.$couleur-fond;
   color: variables.$couleur-texte;
   font-family: variables.$police-principale;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   line-height: 1.6;
 }
 
 
 small {
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
