@@ -9,21 +9,10 @@
 
 // 4. Importer les layout (ex: header, footer, sections)
 @use "layout/header";
-
 @use "layout/hero";
+@use "layout/a-propos.scss";
 
-@use "components/cta"
-
-
-// @use "layout/hero"; // à ajouter au fur et à mesure
-
-
-// @use "layout/footer";
+// 5. Importer les composants réutilisables
+@use "components/cta";
 
 
-
-
-// 5. Importer les composants si tu en as
-
-// @use "components/buttons";
-// @use "components/cards";

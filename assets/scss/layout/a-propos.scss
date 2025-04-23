@@ -9,38 +9,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 15rem;
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
       align-items: flex-start;
       justify-content: center;
-      gap: 4rem;
+      gap: 15rem;
     }
   }
 
   .a-propos-photo img {
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 12px 8px rgba(0, 0, 0, 0.2);
   }
 
   .a-propos-texte {
-    max-width: 600px;
+    max-width: 40rem;
+}
 
-    h2 {
-      font-size: 32px;
-      font-family: $police-titres;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-family: $police-principale;
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-  }
 }
