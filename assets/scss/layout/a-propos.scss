@@ -1,0 +1,46 @@
+@use "../abstract/variables" as *;
+
+.a-propos {
+  padding: 4rem 2rem;
+  background-color: $couleur-fond;
+  color: $couleur-texte;
+
+  .a-propos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 4rem;
+    }
+  }
+
+  .a-propos-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .a-propos-texte {
+    max-width: 600px;
+
+    h2 {
+      font-size: 32px;
+      font-family: $police-titres;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: $police-principale;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  }
+}

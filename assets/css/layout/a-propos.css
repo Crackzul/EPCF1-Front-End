@@ -1,0 +1,42 @@
+.a-propos {
+  padding: 4rem 2rem;
+  background-color: #faf2e7;
+  color: #244357;
+}
+.a-propos .a-propos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .a-propos .a-propos-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+.a-propos .a-propos-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.a-propos .a-propos-texte {
+  max-width: 600px;
+}
+.a-propos .a-propos-texte h2 {
+  font-size: 32px;
+  font-family: "Marcellus", serif;
+  margin-bottom: 1rem;
+}
+.a-propos .a-propos-texte p {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=a-propos.css.map */
