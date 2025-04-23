@@ -1,14 +1,28 @@
+// 1. Importer les variables (toujours en premier)
+@use "abstract/variables";
+
+// 2. Importer la base typographique (polices uniquement)
 @use "base/typography";
+
+// 3. Importer les styles de base (body, h1, etc.)
 @use "base/base";
 
+// 4. Importer les layout (ex: header, footer, sections)
 @use "layout/header";
-@use "layout/footer";
 
-@use "components/cards";
-@use "components/cta";
-@use "components/menu-items";
+@use "layout/hero";
 
-@use "pages/homepage";
-@use "base/responsive"; 
+@use "components/cta"
 
-// Ordre dans style: BASE (base, fonts, utilies [class se répétant, ex: .container]) puis LAYOUT (partie du site qui se répète: header, footer) puis COMPONENTS (banner, btn, card) puis PAGES (homepage, etc..) puis RESPONSIVE
+// @use "layout/hero"; // à ajouter au fur et à mesure
+
+
+// @use "layout/footer";
+
+
+
+
+// 5. Importer les composants si tu en as
+
+// @use "components/buttons";
+// @use "components/cards";

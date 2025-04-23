@@ -1,25 +1,12 @@
 @use "../abstract/variables";
-
-@font-face {
-    font-family: "Dancing Script";
-    src: url("../fonts/Dancing_Script/static/DancingScript-Regular.ttf") format("truetype");
-  }
   
-  @font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf") format("truetype");
-  }
 @font-face {
-    font-family: variables.$police-principale;
-    src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  font-family: "Marcellus";
+  src: url("../fonts/Marcellus/Marcellus-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: variables.$police-accent;
-    src: url(../fonts/Dancing_Script/static/DancingScript-Regular.ttf);
-
-    font-family: "Dancing Script";
-    src: url("../fonts/Dancing_Script/static/DancingScript-Regular.ttf") format("truetype");
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
 }
-
 

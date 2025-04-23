@@ -1,39 +1,61 @@
-@use '../abstract/variables' as *;
+@use '../abstract/variables' as *; // as pour apeller la variable par son alias directement et pas .variables.$alias
 @use 'sass:color';
 
-.bouton,
-.bouton-secondaire {
+
+// Bouton principal
+.bouton {
   display: inline-block;
-  padding: 0.75em 1.5em;
-  font-family: $police-secondaire;
+  padding: 1rem 2rem;
+  background-color: $vertForet;
+  color: white;
+  font-family: $police-principale;
   font-size: 18px;
   font-weight: 600;
   border: none;
-  border-radius: 10px;
+  border-radius: 24px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-// 🌿 Bouton principal vert
-.bouton,
-.button {
-  background-color: $couleur-secondaire;
-  color: white;
+  transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: color.adjust($couleur-secondaire, $lightness: -10%);
-    transform: scale(1.03);
+    background-color: $vertClair;
   }
 }
 
-// 🌸 Bouton secondaire (ex: Lire Plus)
+// Bouton secondaire minimaliste
 .bouton-secondaire {
-  color: $couleur-accent;
-  transition: color 0.3s ease;
+  padding: 0.75rem 0.5rem; // pour aérer un peu sans faire vrai bouton
+  color: $vertForet;
+  font-family: $police-principale;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 1s ease;
+  position: relative; // pour que mon pseudo-élément aille au bon endroit
 
-  &:hover {
-    color: color.adjust($couleur-accent, $lightness: -10%);
+  
+  &::after {
+    content: "";
+    position: absolute; // mon trait apparaît grace à la position relative de son parent
+    left: 0; //
+    bottom: 0; // ces deux lignes permettent d'éviter un comportement étrange et fixent bien mon peseudo-élément ou on le veux. 
+    height: 5px;
+    width: 100%;
+    background-color: $vertForet;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 1s ease, background-color 1s ease;
+  }
+
+  &:hover { // éclaircit le texte
+    color: $vertClair;
+
+    &::after {
+      transform: scaleX(1);
+      background-color: $vertClair;
+    }
   }
 }
+

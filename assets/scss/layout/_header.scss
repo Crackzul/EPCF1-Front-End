@@ -1,23 +1,49 @@
 @use "../abstract/variables";
 
-#header {
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: variables.$couleur-fond;
+
+  .logo {
+    font-family: variables.$police-titres;
+    font-size: 32px;
+    color: variables.$couleur-principale;
+  }
+
+  nav ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: -4%;
-    .logo-top {
-        width: 8%;
-        img {width: 100%;}
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      text-decoration: none;
+      font-family: variables.$police-principale;
+      font-size: 18px;
+      font-weight: 600;
+      color: variables.$couleur-texte;
+      transition: color 0.3s ease;
+      padding: 0.75rem 0.5rem; // pour aérer un peu sans faire vrai bouton
+
+      &:hover {
+        color: variables.$couleur-principale;
+      }
     }
-    ul {
-        list-style: none;
-        display: flex;
-        gap: 10rem;
-        width: 70%;
-        li:after {
-            content: "";
-            height: 2px;
-            color: variables.$couleur-secondaire;
-        }
+  }
+
+  // Responsive simple
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
     }
+  }
 }

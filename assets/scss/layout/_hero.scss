@@ -1,0 +1,12 @@
+@use "../abstract/variables";
+
+.hero {
+    position: relative;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

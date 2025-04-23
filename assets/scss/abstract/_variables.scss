@@ -1,7 +1,14 @@
-$couleur-principale: #FFECEB;
-$couleur-secondaire: #00BF96;
-$couleur-accent: #FF7770;
-$couleur-text: #333;
-$police-principale: "Open Sans", sans-serif;
-$police-secondaire: "Nunito Semi-bold", sans-serif;
-$police-accent:"Dancing Script", cursive;
+$vertForet: #167544; // Vert foncé – couleur forte, boutons, titres
+$vertClair: #24bc6e; // Vert clair – hover, accents doux
+$beige: #faf2e7; // Beige doux – fond principal
+$texteFonce: #244357; // Bleu-gris foncé – couleur du texte
+
+$couleur-principale: $vertForet; // Alias pour l'utilisation des couleurs
+$couleur-secondaire: $vertClair;
+$couleur-fond: $beige;
+$couleur-titre: $vertForet;
+$couleur-texte: $texteFonce;
+
+
+$police-titres: 'Marcellus', serif;
+$police-principale: 'Nunito', sans-serif;
