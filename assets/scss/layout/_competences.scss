@@ -1,22 +1,18 @@
-// 1. On importe nos variables (couleurs, polices, etc.)
 @use "../abstract/variables" as *;
 
-// 2. Début de la section compétences
 .competences {
-  padding: 4rem 2rem; // Marges internes généreuses
-  background-color: $couleur-fond; // Fond beige doux
-  color: $couleur-texte; // Texte foncé
-  text-align: center; // Alignement global au centre
+  text-align: center;
 
-  // 3. Conteneur principal avec flexbox
   .competences-container {
     display: flex;
-    flex-direction: row; // Version desktop par défaut
     justify-content: center;
     align-items: flex-start;
-    gap: 34rem; // Gros écartement entre front-end et back-end
+    gap: 34rem; 
 
-    // 4. Adaptation mobile
+    // Adaptation Tablette et mobile
+    @media screen and (max-width: 1024px) {
+      gap: 0; // corrige le passage des "compétences" en grande colonne à 1024px
+    }    
     @media screen and (max-width: 768px) {
       flex-direction: column; // Les blocs passent en colonne
       align-items: center; // Centrage horizontal
@@ -24,9 +20,8 @@
     }
   }
 
-  // 5. Bloc contenant un titre + une liste de compétences
   .competences-bloc {
-    flex: 1; // Laisse le bloc prendre l’espace dispo
+    flex: 1; // L'élément avec flex: 1 occupera tout l'espace restant dans le conteneur après que les autres éléments ont été disposés.
     max-width: 400px; // Limite la largeur
 
     ul.liste-competences {
@@ -51,7 +46,7 @@
 
           &:hover {
             transform: scale(1.1); // Zoom doux
-            filter: brightness(1.1) saturate(1.1); // Boost visuel
+            filter: brightness(1.1) saturate(1.1); // Boost éclairsissement 
           }
         }
 

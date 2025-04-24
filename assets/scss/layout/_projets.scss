@@ -6,27 +6,24 @@
   color: $couleur-texte;
   text-align: center;
 
-  h2 {
-    font-family: $police-titres;
-    font-size: 32px;
-    margin-bottom: 4rem;
-    color: $couleur-principale;
-  }
-
   .projets-container {
     display: flex;
     justify-content: center;
     gap: 4rem;
-    flex-wrap: wrap; // Permet un retour à la ligne fluide si nécessaire
+    flex-wrap: wrap; // Permet un retour à la ligne en 1024
 
     .projet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background-color: white;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.08);
       max-width: 320px;
       overflow: hidden;
       transition: transform 0.3s ease;
       text-align: left;
+      align-items: center;
 
       &:hover {
         transform: translateY(-8px);
@@ -37,10 +34,7 @@
       }
 
       h3 {
-        font-family: $police-titres;
-        font-size: 24px;
         margin: 1.5rem 1.5rem 0.5rem;
-        color: $couleur-principale;
       }
 
       p {

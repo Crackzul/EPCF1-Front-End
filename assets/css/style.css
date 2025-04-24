@@ -46,9 +46,7 @@ small {
   background-color: #faf2e7;
 }
 .main-header .logo {
-  font-family: "Marcellus", serif;
   font-size: 32px;
-  color: #167544;
 }
 .main-header nav ul {
   list-style: none;
@@ -145,17 +143,18 @@ small {
 }
 
 .competences {
-  padding: 4rem 2rem;
-  background-color: #faf2e7;
-  color: #244357;
   text-align: center;
 }
 .competences .competences-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 34rem;
+}
+@media screen and (max-width: 1024px) {
+  .competences .competences-container {
+    gap: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .competences .competences-container {
@@ -212,12 +211,6 @@ small {
   color: #244357;
   text-align: center;
 }
-.projets h2 {
-  font-family: "Marcellus", serif;
-  font-size: 32px;
-  margin-bottom: 4rem;
-  color: #167544;
-}
 .projets .projets-container {
   display: flex;
   justify-content: center;
@@ -225,13 +218,17 @@ small {
   flex-wrap: wrap;
 }
 .projets .projets-container .projet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.08);
   max-width: 320px;
   overflow: hidden;
   transition: transform 0.3s ease;
   text-align: left;
+  align-items: center;
 }
 .projets .projets-container .projet:hover {
   transform: translateY(-8px);
@@ -240,10 +237,7 @@ small {
   width: 100%;
 }
 .projets .projets-container .projet h3 {
-  font-family: "Marcellus", serif;
-  font-size: 24px;
   margin: 1.5rem 1.5rem 0.5rem;
-  color: #167544;
 }
 .projets .projets-container .projet p {
   font-family: "Nunito", sans-serif;
