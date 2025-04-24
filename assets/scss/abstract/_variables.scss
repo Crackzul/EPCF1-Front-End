@@ -3,6 +3,7 @@ $vertClair: #24bc6e; // Vert clair – hover, accents doux
 $beige: #faf2e7; // Beige doux – fond principal
 $texteFonce: #244357; // Bleu-gris foncé – couleur du texte
 
+
 $couleur-principale: $vertForet; // Alias pour l'utilisation des couleurs
 $couleur-secondaire: $vertClair;
 $couleur-fond: $beige;
@@ -10,5 +11,5 @@ $couleur-titre: $vertForet;
 $couleur-texte: $texteFonce;
 
 
-$police-titres: 'Marcellus', serif;
+$police-titres: 'Marcellus', serif; // Alias pour l'utilisation des Typo
 $police-principale: 'Nunito', sans-serif;

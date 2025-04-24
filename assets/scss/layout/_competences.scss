@@ -21,7 +21,7 @@
   }
 
   .competences-bloc {
-    flex: 1; // L'élément avec flex: 1 occupera tout l'espace restant dans le conteneur après que les autres éléments ont été disposés.
+    flex: 1; // L'élément avec flex: 1 occupera tout l'espace restant dans le conteneur après que les autres éléments aient été disposés.
     max-width: 400px; // Limite la largeur
 
     ul.liste-competences {

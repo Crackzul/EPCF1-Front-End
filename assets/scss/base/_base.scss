@@ -1,28 +1,28 @@
-@use "../abstract/variables";
+@use "../abstract/variables" as*;
 
 
 h1 {
   font-family: "Marcellus", serif;
   font-size: 48px;
-  color: variables.$couleur-titre;
+  color: $couleur-titre;
 }
 
 h2 {
   font-family: "Marcellus", serif;
   font-size: 32px;
-  color: variables.$couleur-titre;
+  color: $couleur-titre;
 }
 
 h3 {
   font-family: "Marcellus", serif;
   font-size: 24px;
-  color: variables.$couleur-titre;
+  color: $couleur-titre;
 }
 
 body {
-  background-color: variables.$couleur-fond;
-  color: variables.$couleur-texte;
-  font-family: variables.$police-principale;
+  background-color: $couleur-fond;
+  color: $couleur-texte;
+  font-family: $police-principale;
   margin: 0 auto;
   padding: 0 auto;
   line-height: 1.6;

@@ -1,4 +1,4 @@
-@use "../abstract/variables";
+@use "../abstract/variables" as*;
 
 .hero {
     position: relative;
@@ -33,8 +33,11 @@
       flex-direction: column;
       font-weight: 600;
       color: #faf2e7;
-      font-size: 24px;
+      font-size: 34px;
+
+      @media screen and (max-width: 360px) {
+        font-size: 29px;
     }
   }
-  
+}
   

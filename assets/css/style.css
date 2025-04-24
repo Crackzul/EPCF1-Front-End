@@ -111,7 +111,12 @@ small {
   flex-direction: column;
   font-weight: 600;
   color: #faf2e7;
-  font-size: 24px;
+  font-size: 34px;
+}
+@media screen and (max-width: 360px) {
+  .hero-overlay .hero-textes {
+    font-size: 29px;
+  }
 }
 
 .a-propos {
@@ -257,6 +262,94 @@ small {
   .projets .projet {
     max-width: 100%;
   }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 4rem;
+  margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+.contact-container .form-contact {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  font-family: "Nunito", sans-serif;
+}
+.contact-container .form-contact .form-group {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.contact-container .form-contact .form-group label {
+  position: absolute;
+  top: -0.8rem;
+  left: 1rem;
+  padding: 0 0.5rem;
+  background-color: #faf2e7;
+  color: #244357;
+  font-size: 0.9rem;
+  z-index: 1;
+}
+.contact-container .form-contact .form-group input,
+.contact-container .form-contact .form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgb(90.7609756098, 149.2829268293, 187.0390243902);
+  border-radius: 12px;
+  background-color: #faf2e7;
+  color: #244357;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  appearance: none;
+  box-shadow: none;
+}
+.contact-container .form-contact .form-group input::placeholder,
+.contact-container .form-contact .form-group textarea::placeholder {
+  color: rgb(118.1341463415, 166.9024390244, 198.3658536585);
+}
+.contact-container .form-contact .form-group input:focus,
+.contact-container .form-contact .form-group textarea:focus {
+  outline: none;
+  border-color: #167544;
+}
+.contact-container .form-contact .form-group textarea {
+  resize: none;
+}
+.contact-container .form-contact .form-feedback {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.contact-container .contact-socials {
+  flex: 1;
+  max-width: 300px;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  font-family: "Nunito", sans-serif;
+  color: #244357;
+}
+.contact-container .contact-socials p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.contact-container .contact-socials .icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.contact-container .contact-socials .icons a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+.contact-container .contact-socials .icons a img:hover {
+  transform: scale(1.1);
 }
 
 .bouton {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
     <header class="main-header">
         <h1 class="logo">Didier</h1>
         <nav>
@@ -19,19 +20,23 @@
           </ul>
         </nav>
     </header>
+
     <section class="hero">
         <div class="hero-overlay">
             <div class="hero-titres">
                 <h1>Développeur full-stack</h1>
                 <h1>nature & intuitif</h1>
-              </div>
-              <div class="hero-textes">
+            </div>
+            <div class="hero-textes">
                 <p>Je crée des interfaces douces,</p>
                 <p>lisibles et humaines.</p>
-              </div>
+            </div>
           <a href="#projets" class="bouton">Voir mes projets</a>
         </div>
     </section>
+
+      <!-- Section à propos -->
+
     <section id="a-propos" class="a-propos">
         <div class="a-propos-container">
           <div class="a-propos-photo">
@@ -39,48 +44,56 @@
           </div>
           <div class="a-propos-texte">
             <h2>À propos</h2>
-            <p>Je suis un développeur full-stack passionné par le design d’interfaces intuitives, lisibles et naturelles.</p>
-            <p>Mon objectif est de créer des expériences utilisateurs fluides et humaines, en accord avec les valeurs d’accessibilité et de simplicité.</p>
+            <p>En reconversion vers le développement web, j'explore le code comme une matière vivante, où chaque ligne peut façonner une interface douce, lisible et humaine.</p>
+            <p>Mon objectif : concevoir des outils numériques simples, beaux, et accessibles au plus grand nombre.</p>
           </div>
         </div>
       </section>
+      
       <section class="competences" id="competences">
 
         <h2>Compétences</h2>
 
         <div class="competences-container">
-          
-          <!-- Bloc Front-End -->
-          <div class="competences-bloc">
+
+          <!-- Block Front-End -->
+          <div class="competences-bloc"> 
             <h3>Front-End</h3>
             <ul class="liste-competences">
               <li>
                 <img src="assets/icones/figma.svg" alt="Logo Figma">
-                <p>Figma<br><small>Maquette & prototypage</small></p>
+                <p>Figma</p>
+                <small>Maquette & prototypage</small>
               </li>
               <li>
                 <img src="assets/icones/html5.svg" alt="Logo HTML5">
-                <p>HTML5<br><small>Structure sémantique</small></p>
+                <p>HTML5</p>
+                <small>Structure sémantique</small>
               </li>
               <li>
                 <img src="assets/icones/css3-alt.svg" alt="Logo CSS3">
-                <p>CSS3<br><small>Mise en forme responsive</small></p>
+                <p>CSS3</p>
+                <small>Mise en forme responsive</small>
               </li>
               <li>
                 <img src="assets/icones/Sass.svg" alt="Logo SCSS">
-                <p>SCSS<br><small>Organisation & variables</small></p>
+                <p>SCSS</p>
+                <small>Organisation & variables</small>
               </li>
               <li>
                 <img src="assets/icones/Tailwind_CSS_Logo.svg" alt="Logo Tailwind CSS">
-                <p>Tailwind<br><small>Utilitaire rapide & mobile-first</small></p>
+                <p>Tailwind</p>
+                <small>Utilitaire rapide & mobile-first</small>
               </li>
               <li>
                 <img src="assets/icones/javascript.svg" alt="Logo JavaScript">
-                <p>JavaScript<br><small>Interactions & logique</small></p>
+                <p>JavaScript</p>
+                <small>Interactions & logique</small>
               </li>
               <li>
                 <img src="assets/icones/github.svg" alt="Logo GitHub">
-                <p>GitHub<br><small>Versionning & collaboration</small></p>
+                <p>GitHub</p>
+                <small>Versionning & collaboration</small>
               </li>
             </ul>
           </div>
@@ -90,11 +103,16 @@
             <h3>Back-End</h3>
             <p><small>Pour bientôt...</small></p>
           </div>
-      
-        </div>
+
+      </div>
+
       </section>
+
+      <!-- Section Projets -->
       <section class="projets" id="projets">
+
         <h2>Mes projets récents</h2>
+
         <div class="projets-container">
       
           <div class="projet">
@@ -120,26 +138,49 @@
       
         </div>
       </section>
-              
-    <section class="test-styles">
-        <H1>Je suis un Portefolio</H1>
-        <section class="test-boutons">
-            <h2>Test de bouton secondaire</h2>
+
+      <!-- Section Formulaire, contact et réseaux pro -->
+
+      <section class="contact" id="contact">
+        <div class="contact-container">
           
-            <a href="#projets" class="bouton-secondaire">Lire plus (minimal)</a>
-          </section>          
-        <h1>Titre H1 – Marcellus 48px</h1>
-        <h2>Titre H2 – Marcellus 32px</h2>
-        <h3>Titre H3 – Marcellus 24px</h3>
-        <p>Texte de paragraphe en Nunito 18px – couleur texte foncé</p>
-        <small>Texte small en Nunito 16px</small>
-        <div class="test-colors">
-          <div class="color-block couleur-principale">Principale</div>
-          <div class="color-block couleur-secondaire">Secondaire</div>
-          <div class="color-block couleur-fond">Fond</div>
-          <div class="color-block couleur-texte">Texte</div>
-        </div>
-    </section>
+          <form class="form-contact">
+            <h2 class="titre-contact">Contact</h2> <!-- 👈 placé ici -->
       
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" placeholder="Votre nom complet" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Mail</label>
+              <input type="email" id="email" placeholder="Votre mail" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Votre message" // row=4required></textarea>
+            </div>
+      
+            <input type="submit" value="Envoyer" class="bouton">
+            <p id="form-feedback" class="form-feedback"></p>
+          </form>
+      
+          <div class="contact-socials">
+            <p>Vous souhaitez me contacter ?</p>
+            <p>Un message ici, ou un clic vers mes réseaux.</p>
+            <p>Je reste disponible.</p>
+            <div class="icons">
+              <a href="https://github.com/Crackzul" target="_blank">
+                <img src="assets/icones/github.svg" alt="GitHub"></a>
+              <a href="https://www.linkedin.com/in/didier-marty-80813b179/" target="_blank">
+                <img src="assets/icones/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
 </body>
 </html>

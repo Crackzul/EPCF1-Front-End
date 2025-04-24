@@ -1,0 +1,100 @@
+@use "../abstract/variables" as *;
+@use "sass:color";
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 4rem;
+  margin-top: 4rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .form-contact {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    font-family: $police-principale;
+
+    .form-group {
+      position: relative;
+      margin-bottom: 2.5rem; // ↑ Espace entre chaque champ
+
+      label {
+        position: absolute;
+        top: -0.8rem;
+        left: 1rem;
+        padding: 0 0.5rem;
+        background-color: $couleur-fond;
+        color: $couleur-texte;
+        font-size: 0.9rem;
+        z-index: 1;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid color.scale($couleur-texte, $lightness: 40%);
+        border-radius: 12px;
+        background-color: $couleur-fond;
+        color: $couleur-texte;
+        font-size: 1rem;
+        font-family: $police-principale;
+        appearance: none;
+        box-shadow: none;
+
+        &::placeholder {
+          color: color.scale($couleur-texte, $lightness: 50%);
+        }
+
+        &:focus {
+          outline: none;
+          border-color: $couleur-principale;
+        }
+      }
+
+      textarea {
+        resize: none;
+      }
+    }
+
+    .form-feedback {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .contact-socials {
+    flex: 1;
+    max-width: 300px;
+    padding-top: 1rem;
+    padding-right: 2rem; // ↑ Souffle visuel à droite
+    font-family: $police-principale;
+    color: $couleur-texte;
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .icons {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2rem;
+
+      a img {
+        width: 32px;
+        height: 32px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
