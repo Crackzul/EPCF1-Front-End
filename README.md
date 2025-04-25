@@ -7,7 +7,7 @@ Bienvenue dans mon portfolio personnel, une vitrine simple et sincère de mes pr
 ## 🔍 À propos
 
 Je m'appelle **Didier Marty**, aussi connu sous le pseudonyme **Boutcamp** ou parfois **Crackzul**.  
-Ancien préparateur en pharmacie, je me suis reconverti avec passion dans le **développement web**.
+Ancien préparateur en pharmacie, je me reconverti avec passion dans le **développement web**.
 
 Ce portfolio est né d’un travail de recherche de sens, de style, de cohérence et de liberté. Il a été pensé pour mêler :
 
@@ -29,9 +29,9 @@ Ce portfolio est né d’un travail de recherche de sens, de style, de cohérenc
 
 ## 🧪 Projets présents
 
-1. **Ce portfolio** (responsive, structuré SCSS)
-2. **Ohm Sweet Ohm** – Site de bien-être nature
-3. **One Million** – ONG fictive au design clean
+1. **Ce portfolio** (responsive, structuré SCSS) : une vitrine sincère de mon cheminement. J'y ai voulu un design clair, harmonieux, qui reflète ma progression et ma personnalité.
+2. **Ohm Sweet Ohm** – Site de bien-être nature : Projet d'équipe autour du bien-être. J'ai veillé à l'harmonie graphique tout en respectant l'univers imaginé ensemble, avec une attention particulière portée au formulaire de contact et à l'expérience visuelle.
+3. **One Million** – Ce projet as été réalisé avec Tailwind. Un exercice qui m'a permis de mieux comprendre les bases du responsive design en mobile first, grâce aux classes utilitaires.
 
 ---
 
