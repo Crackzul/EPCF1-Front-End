@@ -28,12 +28,13 @@
       flex-direction: column;
     }
   
-    .hero-textes {
+    .hero-textes p {
       display: flex;
       flex-direction: column;
       font-weight: 600;
-      color: #faf2e7;
+      color: $couleur-fond;
       font-size: 34px;
+      letter-spacing: 1px;
 
       @media screen and (max-width: 360px) {
         font-size: 29px;

@@ -19,6 +19,7 @@ h3 {
   color: $couleur-titre;
 }
 
+
 body {
   background-color: $couleur-fond;
   color: $couleur-texte;
@@ -28,6 +29,9 @@ body {
   line-height: 1.6;
 }
 
+p {
+  font-size: 18px;
+}
 
 small {
   font-family: "Nunito", sans-serif;

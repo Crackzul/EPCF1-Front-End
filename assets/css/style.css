@@ -34,6 +34,10 @@ body {
   line-height: 1.6;
 }
 
+p {
+  font-size: 18px;
+}
+
 small {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
@@ -68,11 +72,10 @@ small {
   font-size: 18px;
   font-weight: 600;
   color: #244357;
-  transition: color 0.3s ease;
-  padding: 0.75rem 0.5rem;
+  transition: color 0.3s ease-in-out;
 }
 .main-header nav ul li a:hover {
-  color: #167544;
+  color: rgb(69.9804878049, 130.2414634146, 169.1195121951);
 }
 @media (max-width: 768px) {
   .main-header {
@@ -112,21 +115,22 @@ small {
   display: flex;
   flex-direction: column;
 }
-.hero-overlay .hero-textes {
+.hero-overlay .hero-textes p {
   display: flex;
   flex-direction: column;
   font-weight: 600;
   color: #faf2e7;
   font-size: 34px;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 360px) {
-  .hero-overlay .hero-textes {
+  .hero-overlay .hero-textes p {
     font-size: 29px;
   }
 }
 
 .a-propos {
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   background-color: #faf2e7;
   color: #244357;
 }
@@ -251,10 +255,8 @@ small {
   margin: 1.5rem 1.5rem 0.5rem;
 }
 .projets .projets-container .projet p {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
   margin: 0 1.5rem 1.5rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 .projets .projets-container .projet a.bouton-secondaire {
   margin: 0 1.5rem 2rem;
@@ -352,10 +354,18 @@ small {
 .contact-container .contact-socials .icons a img {
   width: 60px;
   height: 60px;
-  transition: transform 0.3s ease;
+  transition: transform 1s ease;
 }
 .contact-container .contact-socials .icons a img:hover {
   transform: scale(1.1);
+}
+
+.footer {
+  background-color: #faf2e7;
+  color: #244357;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 2px solid rgb(69.9804878049, 130.2414634146, 169.1195121951);
 }
 
 .bouton {
@@ -371,10 +381,13 @@ small {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 1s ease-in-out, background-color 1s ease-in-out;
+  letter-spacing: 2px;
+  will-change: transform;
 }
 .bouton:hover {
   background-color: #24bc6e;
+  transform: scale(1.1);
 }
 
 .bouton-secondaire {

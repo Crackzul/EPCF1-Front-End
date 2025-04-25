@@ -1,5 +1,13 @@
 @use "../abstract/variables" as*;
-@use "../base/base";
+@use "sass:color";
+
+.footer {
+  background-color: $couleur-fond;
+  color: $couleur-texte;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 2px solid color.scale($couleur-texte, $lightness: 30%);
+}
 
 
 

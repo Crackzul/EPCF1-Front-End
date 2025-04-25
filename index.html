@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="main-header">
+      <h1 class="logo">Didier</h1>
+      <nav>
+        <ul>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
 
-    <header class="main-header">
-        <h1 class="logo">Didier</h1>
-        <nav>
-          <ul>
-            <li><a href="#a-propos">À propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-    </header>
-
+  <main>
     <section class="hero">
         <div class="hero-overlay">
             <div class="hero-titres">
@@ -29,7 +29,7 @@
             </div>
             <div class="hero-textes">
                 <p>Je crée des interfaces douces,</p>
-                <p>lisibles et humaines.</p>
+                <p>et humaines.</p>
             </div>
           <a href="#projets" class="bouton">Voir mes projets</a>
         </div>
@@ -48,139 +48,141 @@
             <p>Mon objectif : concevoir des outils numériques simples, beaux, et accessibles au plus grand nombre.</p>
           </div>
         </div>
-      </section>
-      
-      <section class="competences" id="competences">
+    </section>
 
-        <h2>Compétences</h2>
+        <!-- Section Compétences -->
 
-        <div class="competences-container">
+    <section class="competences" id="competences">
+      <h2>Compétences</h2>
+      <div class="competences-container">
 
-          <!-- Block Front-End -->
-          <div class="competences-bloc"> 
-            <h3>Front-End</h3>
-            <ul class="liste-competences">
-              <li>
-                <img src="assets/icones/figma.svg" alt="Logo Figma">
-                <p>Figma</p>
-                <small>Maquette & prototypage</small>
-              </li>
-              <li>
-                <img src="assets/icones/html5.svg" alt="Logo HTML5">
-                <p>HTML5</p>
-                <small>Structure sémantique</small>
-              </li>
-              <li>
-                <img src="assets/icones/css3-alt.svg" alt="Logo CSS3">
-                <p>CSS3</p>
-                <small>Mise en forme responsive</small>
-              </li>
-              <li>
-                <img src="assets/icones/Sass.svg" alt="Logo SCSS">
-                <p>SCSS</p>
-                <small>Organisation & variables</small>
-              </li>
-              <li>
-                <img src="assets/icones/Tailwind_CSS_Logo.svg" alt="Logo Tailwind CSS">
-                <p>Tailwind</p>
-                <small>Utilitaire rapide & mobile-first</small>
-              </li>
-              <li>
-                <img src="assets/icones/javascript.svg" alt="Logo JavaScript">
-                <p>JavaScript</p>
-                <small>Interactions & logique</small>
-              </li>
-              <li>
-                <img src="assets/icones/github.svg" alt="Logo GitHub">
-                <p>GitHub</p>
-                <small>Versionning & collaboration</small>
-              </li>
-            </ul>
-          </div>
-      
-          <!-- Bloc Back-End... affaire à suivre...-->
-          <div class="competences-bloc vide">
-            <h3>Back-End</h3>
-            <p><small>Pour bientôt...</small></p>
-          </div>
-
+        <!-- Block Front-End -->
+        <div class="competences-bloc"> 
+          <h3>Front-End</h3>
+          <ul class="liste-competences">
+            <li>
+              <img src="assets/icones/figma.svg" alt="Logo Figma">
+              <p>Figma</p>
+              <small>Maquette & prototypage</small>
+            </li>
+            <li>
+              <img src="assets/icones/html5.svg" alt="Logo HTML5">
+              <p>HTML5</p>
+              <small>Structure sémantique</small>
+            </li>
+            <li>
+              <img src="assets/icones/css3-alt.svg" alt="Logo CSS3">
+              <p>CSS3</p>
+              <small>Mise en forme responsive</small>
+            </li>
+            <li>
+              <img src="assets/icones/Sass.svg" alt="Logo SCSS">
+              <p>SCSS</p>
+              <small>Organisation & variables</small>
+            </li>
+            <li>
+              <img src="assets/icones/Tailwind_CSS_Logo.svg" alt="Logo Tailwind CSS">
+              <p>Tailwind</p>
+              <small>Utilitaire rapide & mobile-first</small>
+            </li>
+            <li>
+              <img src="assets/icones/javascript.svg" alt="Logo JavaScript">
+              <p>JavaScript</p>
+              <small>Interactions & logique</small>
+            </li>
+            <li>
+              <img src="assets/icones/github.svg" alt="Logo GitHub">
+              <p>GitHub</p>
+              <small>Versionning & collaboration</small>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Bloc Back-End... affaire à suivre...-->
+        <div class="competences-bloc vide">
+          <h3>Back-End</h3>
+          <p><small>Pour bientôt...</small></p>
+        </div>
       </div>
-
-      </section>
+    </section>
 
       <!-- Section Projets -->
-      <section class="projets" id="projets">
 
-        <h2>Mes projets récents</h2>
+    <section class="projets" id="projets">
 
-        <div class="projets-container">
-      
-          <div class="projet">
-            <img src="assets/img/OneMillion.png" alt="Aperçu One Million">
-            <h3>One Million</h3>
-            <p>Un site responsive pour une ONG internationale. Design épuré et performance optimisée.</p>
-            <a href="#" class="bouton-secondaire">Voir plus</a>
-          </div>
-      
-          <div class="projet">
-            <img src="assets/img/Ohm.png" alt="Aperçu Ohm Sweet Ohm">
-            <h3>Ohm Sweet Ohm</h3>
-            <p>Une plateforme de bien-être inspirée par la nature. Couleurs douces et structure modulaire.</p>
-            <a href="#" class="bouton-secondaire">Voir plus</a>
-          </div>
-      
-          <div class="projet">
-            <img src="assets/img/Portfolio.png" alt="Aperçu Portfolio actuel">
-            <h3>Mon Portfolio</h3>
-            <p>Ce site-même. Un design personnel, responsive, codé en SCSS avec une logique desktop-first.</p>
-            <a href="#" class="bouton-secondaire">Voir plus</a>
-          </div>
-      
+      <h2>Mes projets récents</h2>
+
+      <div class="projets-container">
+    
+        <div class="projet">
+          <img src="assets/img/OneMillion.png" alt="Aperçu One Million">
+          <h3>One Million</h3>
+          <p>Ce projet as été réalisé avec Tailwind. Un exercice qui m'a permis de mieux comprendre les bases du responsive design en mobile first, grâce aux classes utilitaires.</p>
+          <a href="#" class="bouton-secondaire">Voir plus</a>
         </div>
-      </section>
+    
+        <div class="projet">
+          <img src="assets/img/Ohm.png" alt="Aperçu Ohm Sweet Ohm">
+          <h3>Ohm Sweet Ohm</h3>
+          <p>Projet d'équipe autour du bien-être. J'ai veillé à l'harmonie graphique tout en respectant l'univers imaginé ensemble, avec une attention particulière portée au formulaire de contact et à l'expérience visuelle.</p>
+          <a href="#" class="bouton-secondaire">Voir plus</a>
+        </div>
+    
+        <div class="projet">
+          <img src="assets/img/Portfolio.png" alt="Aperçu Portfolio actuel">
+          <h3>Mon Portfolio</h3>
+          <p>J'ai conçu ce portfolio comme <br> une vitrine sincère de mon cheminement. J'y ai voulu un design clair, harmonieux, qui reflète ma progression et ma personnalité.</p>
+          <a href="#" class="bouton-secondaire">Voir plus</a>
+        </div>
+    
+      </div>
+    </section>
 
       <!-- Section Formulaire, contact et réseaux pro -->
-
-      <section class="contact" id="contact">
-        <div class="contact-container">
-          
-          <form class="form-contact">
-            <h2 class="titre-contact">Contact</h2> <!-- 👈 placé ici -->
-      
-            <div class="form-group">
-              <label for="nom">Nom</label>
-              <input type="text" id="nom" placeholder="Votre nom complet" required>
-            </div>
-      
-            <div class="form-group">
-              <label for="email">Mail</label>
-              <input type="email" id="email" placeholder="Votre mail" required>
-            </div>
-      
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="4" placeholder="Votre message" // row=4required></textarea>
-            </div>
-      
-            <input type="submit" value="Envoyer" class="bouton">
-            <p id="form-feedback" class="form-feedback"></p>
-          </form>
-      
-          <div class="contact-socials">
-            <p>Vous souhaitez me contacter ?</p>
-            <p>Un message ici, ou un clic vers mes réseaux.</p>
-            <p>Je reste disponible.</p>
-            <div class="icons">
-              <a href="https://www.linkedin.com/in/didier-marty-80813b179/" target="_blank">
-                <img src="assets/icones/linkedin.svg" alt="LinkedIn"></a>
-              <a href="https://github.com/Crackzul" target="_blank">
-                <img src="assets/icones/github.svg" alt="GitHub"></a>
-            </div>
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        
+        <form class="form-contact">
+          <h2 class="titre-contact">Contact</h2>
+    
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" placeholder="Votre nom complet" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Mail</label>
+            <input type="email" id="email" placeholder="Votre mail" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Votre message" // row=4required></textarea>
+          </div>
+    
+          <input type="submit" value="Envoyer" class="bouton">
+          <p id="form-feedback" class="form-feedback"></p>
+        </form>
+    
+        <div class="contact-socials">
+          <p>Vous souhaitez me contacter ?</p>
+          <p>Un message ici, ou un clic vers mes réseaux.</p>
+          <p>Je reste disponible.</p>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/didier-marty-80813b179/" target="_blank">
+              <img src="assets/icones/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/Crackzul" target="_blank">
+              <img src="assets/icones/github.svg" alt="GitHub"></a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer">
+  <small>&copy; 2025 Didier Marty — Portfolio Boutcamp</small>
+</footer>
       
-
-
+      
 </body>
 </html>

@@ -38,10 +38,8 @@
       }
 
       p {
-        font-family: $police-principale;
-        font-size: 16px;
         margin: 0 1.5rem 1.5rem;
-        line-height: 1.5;
+        line-height: 1.2; // Paragraphe plus concis
       }
 
       a.bouton-secondaire {

@@ -1,5 +1,5 @@
 @use "../abstract/variables" as *;
-@use "sass:color";
+@use "sass:color"; // traitement particulier avec une fonction native
 
 .contact-container {
   display: flex;
@@ -21,7 +21,7 @@
 
     .form-group {
       position: relative;
-      margin-bottom: 2.5rem; // ↑ Espace entre chaque champ
+      margin-bottom: 2.5rem; // Espace entre les chaque champs
       width: 100%;
 
       label {
@@ -63,7 +63,7 @@
       }
     }
   }
-   // La formule magique pour que mon formulaire reste sobre dans un navigateur qui impose sa loi
+   // La formule magique pour que mon formulaire reste sobre et cadré dans un navigateur qui impose sa loi..
   input:-webkit-autofill {
     box-shadow: 0 0 0px 1000px $couleur-fond inset !important; // recouvre le fond forçé par chrome avec MON fond
     -webkit-text-fill-color: $couleur-texte !important; // corrige la couleur du texte qui pourrais devenir grise par défault
@@ -89,7 +89,7 @@
       a img {
         width: 60px;
         height: 60px;
-        transition: transform 0.3s ease;
+        transition: transform 1s ease;
 
         &:hover {
           transform: scale(1.1);
