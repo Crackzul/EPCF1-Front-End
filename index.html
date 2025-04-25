@@ -10,6 +10,11 @@
 <body>
   <header class="main-header">
       <h1 class="logo">Didier</h1>
+      <button class="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>      
       <nav>
         <ul>
           <li><a href="#a-propos">À propos</a></li>
@@ -52,7 +57,7 @@
 
         <!-- Section Compétences -->
 
-    <section class="competences" id="competences">
+    <section class="competences reveal" id="competences">
       <h2>Compétences</h2>
       <div class="competences-container">
 
@@ -60,40 +65,40 @@
         <div class="competences-bloc"> 
           <h3>Front-End</h3>
           <ul class="liste-competences">
-            <li>
+            <li class="reveal-item">
               <img src="assets/icones/figma.svg" alt="Logo Figma">
               <p>Figma</p>
               <small>Maquette & prototypage</small>
             </li>
-            <li>
+            <li class="reveal-item">
               <img src="assets/icones/html5.svg" alt="Logo HTML5">
               <p>HTML5</p>
               <small>Structure sémantique</small>
             </li>
-            <li>
+            <li class="reveal-item">
               <img src="assets/icones/css3-alt.svg" alt="Logo CSS3">
               <p>CSS3</p>
               <small>Mise en forme responsive</small>
             </li>
-            <li>
+            <li class="reveal-item">
+              <img src="assets/icones/github.svg" alt="Logo GitHub">
+              <p>GitHub</p>
+              <small>Versionning & collaboration</small>
+            </li>
+            <li class="reveal-item">
               <img src="assets/icones/Sass.svg" alt="Logo SCSS">
               <p>SCSS</p>
               <small>Organisation & variables</small>
             </li>
-            <li>
+            <li class="reveal-item">
               <img src="assets/icones/Tailwind_CSS_Logo.svg" alt="Logo Tailwind CSS">
               <p>Tailwind</p>
               <small>Utilitaire rapide & mobile-first</small>
             </li>
-            <li>
+            <li class="reveal-item">
               <img src="assets/icones/javascript.svg" alt="Logo JavaScript">
               <p>JavaScript</p>
               <small>Interactions & logique</small>
-            </li>
-            <li>
-              <img src="assets/icones/github.svg" alt="Logo GitHub">
-              <p>GitHub</p>
-              <small>Versionning & collaboration</small>
             </li>
           </ul>
         </div>
@@ -179,10 +184,12 @@
     </section>
   </main>
 
-<footer class="footer">
-  <small>&copy; 2025 Didier Marty — Portfolio Boutcamp</small>
-</footer>
-      
+  <footer class="footer">
+    <small>&copy; 2025 Didier Marty — Portfolio Boutcamp</small>
+  </footer>
+
+  <script src="assets/js/menu.js"></script>    
+  <script src="assets/js/animations.js"></script>
       
 </body>
 </html>
