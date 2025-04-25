@@ -1,17 +1,18 @@
 {
-  "name": "ohm-sweet-ohm",
+  "name": "mon-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/NebulusNubium/Ohm-Sweet-Ohm#readme",
+  "description": "Portfolio personnel de Didier Marty (alias Boutcamp/Crackzul).",
+  "keywords": ["portfolio", "web developer", "html", "scss", "javascript"],
+  "homepage": "",
   "bugs": {
-    "url": "https://github.com/NebulusNubium/Ohm-Sweet-Ohm/issues"
+    "url": "https://github.com/Crackzul/EPCF1-Front-End"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NebulusNubium/Ohm-Sweet-Ohm.git"
+    "url": "https://github.com/Crackzul/EPCF1-Front-End"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Didier Marty",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {

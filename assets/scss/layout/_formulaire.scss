@@ -17,11 +17,12 @@
     flex: 1;
     min-width: 300px;
     max-width: 600px;
-    font-family: $police-principale;
+    width: 100%;
 
     .form-group {
       position: relative;
       margin-bottom: 2.5rem; // ↑ Espace entre chaque champ
+      width: 100%;
 
       label {
         position: absolute;
@@ -61,20 +62,18 @@
         resize: none;
       }
     }
-
-    .form-feedback {
-      font-size: 0.9rem;
-      margin-top: 1rem;
-    }
   }
+   // La formule magique pour que mon formulaire reste sobre dans un navigateur qui impose sa loi
+  input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px $couleur-fond inset !important; // recouvre le fond forçé par chrome avec MON fond
+    -webkit-text-fill-color: $couleur-texte !important; // corrige la couleur du texte qui pourrais devenir grise par défault
+  } // le !important écrase le style par défault du navigateur
 
   .contact-socials {
     flex: 1;
     max-width: 300px;
-    padding-top: 1rem;
-    padding-right: 2rem; // ↑ Souffle visuel à droite
-    font-family: $police-principale;
-    color: $couleur-texte;
+    padding-top: 10rem;
+    text-align: center;
 
     p {
       margin-bottom: 1rem;
@@ -83,12 +82,13 @@
 
     .icons {
       display: flex;
+      justify-content: center;
       gap: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 10rem;
 
       a img {
-        width: 32px;
-        height: 32px;
+        width: 60px;
+        height: 60px;
         transition: transform 0.3s ease;
 
         &:hover {
