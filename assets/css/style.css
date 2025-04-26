@@ -60,6 +60,11 @@ small {
   background-color: #faf2e7;
   position: relative;
 }
+.main-header .logo-burger {
+  display: flex;
+  align-items: center;
+  gap: 40vw;
+}
 .main-header .logo {
   font-size: 32px;
 }
@@ -116,10 +121,10 @@ small {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
+    transition: max-height 1.3s ease-in-out, opacity 2s ease-in-out, padding-top 1.3s ease-in-out, padding-bottom 1.3s ease-in-out;
   }
   .main-header nav ul.open {
-    max-height: 400px;
+    max-height: 300px;
     opacity: 1;
     padding: 2rem 0;
   }

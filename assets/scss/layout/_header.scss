@@ -9,6 +9,12 @@
   background-color: $couleur-fond;
   position: relative;
 
+  .logo-burger {
+    display: flex;
+    align-items: center;
+    gap: 40vw; // espace entre le prénom et le burger
+  }
+
   .logo {
     font-size: 32px;
   }
@@ -64,20 +70,24 @@
     }
 
     nav ul {
+      
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
       gap: 1rem;
-
-      max-height: 0;
+      max-height: 0; // Pour que le menu ne se voit pas avant d'être déplié
       overflow: hidden;
-      opacity: 0;
-      transition: max-height 0.4s ease, opacity 0.4s ease;
+      opacity: 0; // pour voir le texte se coloré en même temps qu'il se déroule
+      transition: max-height 1.3s ease-in-out,
+      opacity 2s ease-in-out,
+      padding-top 1.3s ease-in-out,
+      padding-bottom 1.3s ease-in-out;
+
 
       &.open {
-        max-height: 400px;
+        max-height: 300px; // un peu plus que la hauteur qu'il faut pour que la nav qui aparraisse rentre
         opacity: 1;
-        padding: 2rem 0;
+        padding: 2rem 0; // un peu de padding en haut en bas, pas sur les côtés..
       }
     }
   }
