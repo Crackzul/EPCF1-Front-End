@@ -2,12 +2,17 @@
 
 .competences {
   text-align: center;
+  padding-top: 8vh;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+  }
 
   .competences-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 34rem; 
+    gap: 30rem; 
 
     // Adaptation Tablette et mobile
     @media screen and (max-width: 1024px) {

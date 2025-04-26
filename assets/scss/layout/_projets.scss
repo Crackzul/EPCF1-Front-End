@@ -6,6 +6,10 @@
   color: $couleur-texte;
   text-align: center;
 
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
+
   .projets-container {
     display: flex;
     justify-content: center;
