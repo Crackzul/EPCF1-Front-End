@@ -346,6 +346,7 @@ small {
   width: 100%;
 }
 .contact-container .form-contact .form-group {
+  position: relative;
   margin-bottom: 2.5rem;
   width: 100%;
 }
