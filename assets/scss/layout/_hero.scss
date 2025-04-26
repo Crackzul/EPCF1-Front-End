@@ -12,33 +12,38 @@
 }
 
 .hero-overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10vh;
-    padding: 2rem;
-  
-    h1, p {
-      margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10vh;
+  padding: 2rem;
+
+  h1,
+  p {
+    margin: 0;
+  }
+
+  .hero-titres {
+    h1 {
+      @media screen and (max-width: 426px) {
+        font-size: 34px; // taille plus petite sur mobile
+      }
     }
-  
-    .hero-titres {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .hero-textes p {
-      display: flex;
-      flex-direction: column;
+  }
+
+  .hero-textes {
+    p {
       font-weight: 600;
       color: $couleur-fond;
       font-size: 34px;
       letter-spacing: 1px;
 
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 426px) {
         font-size: 29px;
+      }
     }
   }
 }
+
   

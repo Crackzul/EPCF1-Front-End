@@ -146,22 +146,22 @@ small {
   gap: 10vh;
   padding: 2rem;
 }
-.hero-overlay h1, .hero-overlay p {
+.hero-overlay h1,
+.hero-overlay p {
   margin: 0;
 }
-.hero-overlay .hero-titres {
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 426px) {
+  .hero-overlay .hero-titres h1 {
+    font-size: 34px;
+  }
 }
 .hero-overlay .hero-textes p {
-  display: flex;
-  flex-direction: column;
   font-weight: 600;
   color: #faf2e7;
   font-size: 34px;
   letter-spacing: 1px;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 426px) {
   .hero-overlay .hero-textes p {
     font-size: 29px;
   }
