@@ -1,13 +1,13 @@
-//  Importer les variables (toujours en premier)
+//  Importer les variables
 @use "abstract/variables";
 
-//   Importer la base typographique (polices uniquement)
+//   Importer la base typographique
 @use "base/typography";
 
 //  Importer les styles de base (body, h1, etc.)
 @use "base/base";
 
-//   Importer les layout (ex: header, footer, sections)
+//   Importer les layout
 @use "layout/header";
 @use "layout/hero";
 @use "layout/a-propos.scss";

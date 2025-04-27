@@ -69,9 +69,8 @@
     nav ul {
       
       flex-direction: column;
-      align-items: flex-start;
       width: 100%;
-      gap: 1rem;
+      gap: 1rem; // espacement entre les intitulés de ma Nav
       max-height: 0; // Pour que le menu ne se voit pas avant d'être déplié
       overflow: hidden;
       opacity: 0; // pour voir le texte se coloré en même temps qu'il se déroule
